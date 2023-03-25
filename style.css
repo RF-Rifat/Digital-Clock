@@ -1,0 +1,168 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100svh;
+    width: 100dvw;
+    display: grid;
+    align-items: center;
+    background-color: #1a1a1a;
+}
+.container{
+    cursor: pointer;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 6cqw;
+    height: 30svh;
+    width: 100vw;
+    color: rgb(0, 225, 255);
+}
+
+.content-1{
+    font-size: 9cqw;
+}
+
+.minute{
+    font-size: 4cqw;
+    position: absolute;
+}
+
+
+.kursor {
+    border: 2px solid #5dff65 !important;
+    background-color: #d5c13e !important;
+    border-radius: 50px;
+}
+
+
+/* Button */
+.custom-btn {
+    width: 11cqw;
+    height: 5cqw;
+    color: #fff;
+    border-radius: 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.4cqw;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  
+.btn-14 {
+    background: rgb(255,151,0);
+    border: none;
+    z-index: 1;
+  }
+  .btn-14:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 5px;
+    background-color: #eaf818;
+    background-image: linear-gradient(315deg, #eaf818 0%, #f6fc9c 74%);
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    transition: all 0.3s ease;
+  }
+  .btn-14:hover {
+    color: #000;
+  }
+  .btn-14:hover:after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
+  }
+  .btn-14:active {
+    top: 2px;
+  }
+
+/* github */
+.project-link{
+    display: flex;
+    justify-content: center;
+    gap: 5cqw;
+}
+.project-link h2{
+    color: #f6fc9c;
+    font-size: 2cqw;
+}
+.git-anim {
+    display: inline-flex;
+    display: grid;
+    justify-items: center;
+  }
+.recent-p-link{
+    display: grid;
+    justify-items: center;
+}
+
+  .git-anim .icon {
+    position: relative;
+    background: #ffffff;
+    border-radius: 50%;
+    width: 4cqw;
+    height: 4cqw;
+    font-size: 2.2cqw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .git-anim .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 1.2cqw;
+    background: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .git-anim .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #ffffff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .git-anim .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .git-anim .icon:hover span,
+  .git-anim .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .git-anim .github:hover,
+.git-anim .github:hover .tooltip,
+.git-anim .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
